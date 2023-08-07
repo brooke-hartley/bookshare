@@ -2,10 +2,15 @@
 <html>
   <head>
     <!-- ... Your head content ... -->
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
   </head>
   <body>
     <!-- ... Your body content ... -->
     <%= yield %>
   </body>
 </html>
+
+
 
