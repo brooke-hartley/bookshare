@@ -1,0 +1,12 @@
+<% if @book_data.present? %>
+    <% @book_data.each do |book| %>
+    <div class="book-cover">
+        <%= image_tag book[:image_url], alt: 'Book Cover' %>
+    </div>
+    <div>
+        <strong>Title:</strong> <%= book[:title] %><br>
+        <strong>Authors:</strong> <%= book[:authors].join(', ') %><br>
+        <strong>Description:</strong> <%= book[:description] %>
+    </div>
+    <% end %>
+<% end %>
